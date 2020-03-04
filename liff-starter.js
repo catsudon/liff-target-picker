@@ -5,14 +5,14 @@ window.onload = function (e) {
 };
 
 function initializeApp(data) {
-    const accessToken = liff.getAccessToken();
-    document.getElementById('accessTokenField').textContent = accessToken;
-    toggleAccessToken();
-    liff.sendMessages([{
-        'type': 'text',
-        'text': "You've successfully sent a message! Hooray!"
-    }]).then(function() {
-        window.alert('Message sent');
+    
 }
+document.getElementById('accessTokenField').textContent = accessToken;
+toggleAccessToken();
 
+liff.sendMessages([{
+    'type': 'text',
+    'text': "You've successfully sent a message! Hooray!"
+}]).then(function() {
+    window.alert('Message sent');
 
