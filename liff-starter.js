@@ -16,3 +16,10 @@ liff.sendMessages([{
 }]).then(function() {
     window.alert('Message sent');
 
+if(true){
+    liff.shareTargetPicker([
+        {
+          type: "text",
+          text: "Hello, World!"
+        }
+      ])}
