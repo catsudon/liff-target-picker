@@ -5,8 +5,9 @@ window.onload = function (e) {
         type: 'text',
         text: "yaranaika"
     }])
-};
 }
+}
+
 
 io = "ควย"
   liff.sendMessages([{
