@@ -7,15 +7,6 @@ window.onload = function (e) {
     }])
   })}
 
-
-
-io = "ควย"
-  liff.sendMessages([{
-    type: 'text',
-    text: io
-}])
-
-
 function initializeApp(data) {
   document.getElementById('languagefield').textContent = data.language;
   document.getElementById('viewtypefield').textContent = data.context.viewType;
