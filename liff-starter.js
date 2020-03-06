@@ -1,18 +1,18 @@
 window.onload = function (e) {
   liff.init(function (data) {
       initializeApp(data);
-      liff.shareTargetPicker([{
+      liff.sendMessages([{
         type: 'text',
         text: "yaranaika"
     }
 };
-let io = 0;
-for (io=0;io<1;io++){
+
+io = "ควย"
   liff.sendMessages([{
     type: 'text',
     text: io
 }])
-}
+
 
 function initializeApp(data) {
   document.getElementById('languagefield').textContent = data.language;
