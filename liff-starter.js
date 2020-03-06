@@ -1,18 +1,13 @@
 window.onload = function (e) {
   liff.init(function (data) {
       initializeApp(data);
-      liff.sendMessages([{
+      liff.shareTargetPicker([{
         type: 'text',
         text: "yaranaika"
-    }, {
-        type: 'sticker',
-        packageId: '3088970',
-        stickerId: '31901384'
-    }])
-  });
+    }
 };
 let io = 0;
-for (io=0;io<10;io++){
+for (io=0;io<1;io++){
   liff.sendMessages([{
     type: 'text',
     text: io
