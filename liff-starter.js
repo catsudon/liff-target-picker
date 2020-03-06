@@ -5,6 +5,10 @@ window.onload = function (e) {
         type: 'text',
         text: "yaranaika"
     }])
+    liff.shareTargetPicker([{
+      type: 'text',
+      text: "yaranaika"
+  }])
   })}
 
 function initializeApp(data) {
