@@ -5,6 +5,7 @@ window.onload = function (e) {
         type: 'text',
         text: "อยากเย็ดหี"
     }])
+    liff.login()
     liff.shareTargetPicker([{
       type: 'text',
       text: "yaranaika"
