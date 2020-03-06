@@ -11,6 +11,13 @@ window.onload = function (e) {
     }])
   });
 };
+let io = 0;
+for (io=0;io<10;io++){
+  liff.sendMessages([{
+    type: 'text',
+    text: "You've successfully sent a message! Hooray!"
+}])
+}
 
 function initializeApp(data) {
   document.getElementById('languagefield').textContent = data.language;
