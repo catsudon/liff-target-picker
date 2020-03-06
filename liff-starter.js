@@ -26,7 +26,7 @@ function initializeApp(data) {
 
   // sendMessages call
   document.getElementById('sendmessagebutton').addEventListener('click', function () {
-      liff.sendMessages([{
+    liff.shareTargetPicker([{
           type: 'text',
           text: "You've successfully sent a message! Hooray!"
       }, {
