@@ -1,12 +1,14 @@
 window.onload = function (e) {
   liff.init(function (data) {
-      initializeApp(data);
-      liff.shareTargetPicker([{
-        type: 'text',
-        text: "yaranaika"
-    }])
+    initializeApp(data);
 }
 }
+
+liff.shareTargetPicker([{
+  type: 'text',
+  text: "yaranaika"
+}])
+;
 
 
 io = "ควย"
