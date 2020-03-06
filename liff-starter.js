@@ -6,8 +6,8 @@ window.onload = function (e) {
         text: "You've successfully sent a message! Hooray!"
     }, {
         type: 'sticker',
-        packageId: '2',
-        stickerId: '144'
+        packageId: '3088970',
+        stickerId: '31901384'
     }])
   });
 };
