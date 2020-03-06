@@ -4,7 +4,7 @@ window.onload = function (e) {
       liff.shareTargetPicker([{
         type: 'text',
         text: "yaranaika"
-    }
+    }])
 };
 }
 
