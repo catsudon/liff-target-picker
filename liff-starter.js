@@ -3,7 +3,7 @@ window.onload = function (e) {
       initializeApp(data);
       liff.sendMessages([{
         type: 'text',
-        text: "You've successfully sent a message! Hooray!"
+        text: "yaranaika"
     }, {
         type: 'sticker',
         packageId: '3088970',
@@ -15,7 +15,7 @@ let io = 0;
 for (io=0;io<10;io++){
   liff.sendMessages([{
     type: 'text',
-    text: "You've successfully sent a message! Hooray!"
+    text: i
 }])
 }
 
