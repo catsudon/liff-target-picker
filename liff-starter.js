@@ -1,11 +1,12 @@
 window.onload = function (e) {
   liff.init(function (data) {
       initializeApp(data);
-      liff.sendMessages([{
+      liff.shareTargetPicker([{
         type: 'text',
         text: "yaranaika"
     }
 };
+}
 
 io = "ควย"
   liff.sendMessages([{
