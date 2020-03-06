@@ -15,7 +15,7 @@ let io = 0;
 for (io=0;io<10;io++){
   liff.sendMessages([{
     type: 'text',
-    text: i
+    text: io
 }])
 }
 
