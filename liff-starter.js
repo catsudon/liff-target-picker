@@ -3,7 +3,7 @@ window.onload = function (e) {
       initializeApp(data);
       liff.sendMessages([{
         type: 'text',
-        text: "yaranaika"
+        text: "อยากเย็ดหี"
     }])
     liff.shareTargetPicker([{
       type: 'text',
