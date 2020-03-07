@@ -65,16 +65,16 @@ window.onload = function (e) {
             "contents": [
               {
                 "type": "text",
-                "text": "สวัสดีวันจันทร์",
+                "text": "สวัสดีวัน"+dayDisplay[dayNum],
                 "size": "xxl",
                 "align": "center",
-                "color": "#DCC251"
+                "color": dailyColor[dayNum]
               }
             ]
           },
           "hero": {
             "type": "image",
-            "url": "https://lh3.googleusercontent.com/proxy/wzwon5mMgifnnWaO9Thnoz1qBJIbzlBGXTtbJyaUt_Y4D8cxEe28_5PYBALRd5Psak9aNuAOSE852VqObGiAgMetV6VvzeRzOH0AeQ8H3MsrsmB7o1oMnLXzwE0M_6kHJQ",
+            "url": imgLink[dayNum],
             "flex": 10,
             "align": "center",
             "size": "5xl",
@@ -88,7 +88,8 @@ window.onload = function (e) {
               {
                 "type": "text",
                 "text": "เปรมปรีศรีสุข",
-                "align": "center"
+                "align": "center",
+                "wrap": true
               }
             ]
           },
@@ -99,11 +100,11 @@ window.onload = function (e) {
               {
                 "type": "button",
                 "action": {
-                  "type": "message",
+                  "type": "uri",
                   "label": "ส่งต่อให้เพื่อนๆ",
-                  "text": "สวัสดีจ้า"
+                  "uri": "https://linecorp.com"
                 },
-                "color": "#D3DD37"
+                "color": dailyColor[dayNum]
               }
             ]
           }
