@@ -1,10 +1,10 @@
 window.onload = function (e) {
   liff.init(function (data) {
       initializeApp(data);
-      liff.sendMessages([{
-        type: 'text',
-        text: "อยากเย็ดหี"
-    }])
+    //   liff.sendMessages([{
+    //     type: 'text',
+    //     text: "nganngan"
+    // }])
     liff.login()
     liff.shareTargetPicker([{
       type: 'text',
