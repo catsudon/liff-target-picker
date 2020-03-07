@@ -68,7 +68,7 @@ window.onload = function (e) {
                 "text": "สวัสดีวัน"+dayDisplay[dayNum],
                 "size": "xxl",
                 "align": "center",
-                "color": dailyColor[dayNum]
+                "color": "ff00ff"
               }
             ]
           },
@@ -104,7 +104,7 @@ window.onload = function (e) {
                   "label": "ส่งต่อให้เพื่อนๆ",
                   "text": "สวัสดีจ้า"
                 },
-                "color": dailyColor[dayNum]
+                "color": "#ff0000"
               }
             ]
           }
