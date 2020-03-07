@@ -1,6 +1,6 @@
 window.onload = function (e) {
     tday = new Date()
-    cday = tday.getDay()
+    cday = tday.toUTCString()
     console.log(cday)
   liff.init(function (data) {
       initializeApp(data);
