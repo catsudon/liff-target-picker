@@ -88,8 +88,7 @@ window.onload = function (e) {
               {
                 "type": "text",
                 "text": "เปรมปรีศรีสุข",
-                "align": "center",
-                "wrap": true
+                "align": "center"
               }
             ]
           },
