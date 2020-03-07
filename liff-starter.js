@@ -1,9 +1,9 @@
 window.onload = function (e) {
+    tday = new Date()
+    cday = tday.getDay()
+    console.log(cday)
   liff.init(function (data) {
       initializeApp(data);
-      tday = new Date()
-      cday = tday.getDay()
-      console.log(cday)
       liff.sendMessages([{
   "type": "flex",
   "altText": "Flex Message",
