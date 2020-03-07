@@ -51,7 +51,9 @@ window.onload = function (e) {
     }
     console.log(hour)
     
-  liff.init({liffid:"1653837986-RB8X86jb"},function (data) {
+  liff.init({liffid:"1653837986-RB8X86jb"},start(data))
+  
+  function start (data) {
       initializeApp(data);
       liff.shareTargetPicker([{
         "type": "flex",
@@ -110,8 +112,7 @@ window.onload = function (e) {
           }
         }
       }])
-  })
-}
+  }
 
 function initializeApp(data) {
   document.getElementById('languagefield').textContent = data.language;
