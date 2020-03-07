@@ -110,14 +110,12 @@ window.onload = function (e) {
           }
         }
       }])
-      liff.closeWindow();
-//     liff.login()
-//     liff.shareTargetPicker([{
-//       type: 'text',
-//       text: "yaranaika"
-//   }]).catch(function (error) {
-//     window.alert("Error sending message: " + error);
-// });
+    //   liff.closeWindow();
+    liff.login()
+    liff.shareTargetPicker([{
+      type: 'text',
+      text: "hello"
+  }])
   })
 }
 
