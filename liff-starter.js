@@ -55,7 +55,7 @@ window.onload = function (e) {
       initializeApp(data);
       liff.sendMessages([{
         "type": "flex",
-        "altText": "Flex Message",
+        "altText": "สวัสดีวัน"+dayDisplay[dayNum],
         "contents": {
           "type": "bubble",
           "direction": "ltr",
@@ -87,7 +87,7 @@ window.onload = function (e) {
             "contents": [
               {
                 "type": "text",
-                "text": "เปรมปรีศรีสุข",
+                "text": quote[dayNum],
                 "align": "center",
                 "wrap": true
               }
@@ -110,6 +110,7 @@ window.onload = function (e) {
           }
         }
       }])
+      liff.closeWindow();
 //     liff.login()
 //     liff.shareTargetPicker([{
 //       type: 'text',
