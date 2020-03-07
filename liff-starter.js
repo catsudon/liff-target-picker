@@ -1,5 +1,5 @@
-var imgLink = []
-var dayDisplay = ["อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","ชอบหี"]
+var imgLink = ["https://upload.wikimedia.org/wikipedia/commons/5/51/Small_Red_Rose.JPG","https://1.bp.blogspot.com/-toDpeHWOY1w/VfOPP6a8UeI/AAAAAAAADrI/gFs7cFJJ5KY/s1600/img_3944.jpg","https://lh3.googleusercontent.com/proxy/wzwon5mMgifnnWaO9Thnoz1qBJIbzlBGXTtbJyaUt_Y4D8cxEe28_5PYBALRd5Psak9aNuAOSE852VqObGiAgMetV6VvzeRzOH0AeQ8H3MsrsmB7o1oMnLXzwE0M_6kHJQ","https://i.pinimg.com/originals/4c/58/74/4c58747c86541e59a8bc1c19a06859f9.jpg","https://2.bp.blogspot.com/-FhI7s8FCrGk/UrGwGMqNsII/AAAAAAAAAEk/xI1dvqGEhyA/s1600/DSC029766.jpg","https://img1.thaicomment.com/tc/friday/friday_004.jpg","https://www.technologychaoban.com/wp-content/uploads/2016/09/%E0%B8%9B%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A.jpg"]
+var dayDisplay = ["อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","เสาร์"]
 window.onload = function (e) {
     tday = new Date()
     cday = tday.toUTCString()
@@ -71,7 +71,7 @@ window.onload = function (e) {
           },
           "hero": {
             "type": "image",
-            "url": "https://www.อรุณสวัสดิ์.com/wp-content/uploads/2019/11/DSC_3261-1024x880.jpg",
+            "url": imgLink[dayNum],
             "flex": 10,
             "align": "center",
             "size": "full",
