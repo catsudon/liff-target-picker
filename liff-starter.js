@@ -1,65 +1,60 @@
 window.onload = function (e) {
   liff.init(function (data) {
       initializeApp(data);
-      current_date = new Date()
-      cday = current_date.getDay()
-      console.log(whatDayIsToday)
+      tday = new Date()
+      cday = tday.getDay()
+      console.log(cday)
       liff.sendMessages([{
-        "type": "flex",
-        "altText": "Flex Message",
-        "contents": {
-          "type": "bubble",
-          "direction": "ltr",
-          "header": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "สวัสดีวันจันทร์",
-                "size": "xxl",
-                "align": "center",
-                "color": "#DCC251"
-              }
-            ]
-          },
-          "hero": {
-            "type": "image",
-            "url": "https://www.อรุณสวัสดิ์.com/wp-content/uploads/2019/11/DSC_3261-1024x880.jpg",
-            "flex": 10,
-            "align": "center",
-            "size": "full",
-            "aspectRatio": "4:3",
-            "aspectMode": "fit"
-          },
-          "body": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "เปรมปรีศรีสุข",
-                "align": "center"
-              }
-            ]
-          },
-          "footer": {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "button",
-                "action": {
-                  "type": "uri",
-                  "label": "ส่งต่อให้เพื่อนๆ",
-                  "uri": "https://linecorp.com"
-                },
-                "color": "#D3DD37"
-              }
-            ]
+  "type": "flex",
+  "altText": "Flex Message",
+  "contents": {
+    "type": "bubble",
+    "direction": "ltr",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Header",
+          "align": "center"
+        }
+      ]
+    },
+    "hero": {
+      "type": "image",
+      "url": "https://developers.line.biz/assets/images/services/bot-designer-icon.png",
+      "size": "full",
+      "aspectRatio": "1.51:1",
+      "aspectMode": "fit"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Body",
+          "align": "center"
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "horizontal",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "uri",
+            "label": "Button",
+            "uri": "https://linecorp.com"
           }
         }
-      }])
+      ]
+    }
+  }
+}])
 //     liff.login()
 //     liff.shareTargetPicker([{
 //       type: 'text',
