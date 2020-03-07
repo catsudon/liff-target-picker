@@ -1,15 +1,17 @@
 window.onload = function (e) {
   liff.init(function (data) {
       initializeApp(data);
-    //   liff.sendMessages([{
-    //     type: 'text',
-    //     text: "nganngan"
-    // }])
+      liff.sendMessages([{
+        type: 'text',
+        text: "nganngan"
+    }])
     liff.login()
     liff.shareTargetPicker([{
       type: 'text',
       text: "yaranaika"
-  }])
+  }]).catch(function (error) {
+    window.alert("Error sending message: " + error);
+});
   })}
 
 function initializeApp(data) {
