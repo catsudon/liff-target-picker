@@ -65,16 +65,16 @@ window.onload = function (e) {
             "contents": [
               {
                 "type": "text",
-                "text": "สวัสดีวัน"+dayDisplay[dayNum],
+                "text": "สวัสดีวันจันทร์",
                 "size": "xxl",
                 "align": "center",
-                "color": dailyColor[dayNum]
+                "color": "#DCC251"
               }
             ]
           },
           "hero": {
             "type": "image",
-            "url": imgLink[dayNum],
+            "url": "https://lh3.googleusercontent.com/proxy/wzwon5mMgifnnWaO9Thnoz1qBJIbzlBGXTtbJyaUt_Y4D8cxEe28_5PYBALRd5Psak9aNuAOSE852VqObGiAgMetV6VvzeRzOH0AeQ8H3MsrsmB7o1oMnLXzwE0M_6kHJQ",
             "flex": 10,
             "align": "center",
             "size": "5xl",
@@ -89,7 +89,7 @@ window.onload = function (e) {
                 "type": "text",
                 "text": "เปรมปรีศรีสุข",
                 "align": "center",
-                "wrap": True
+                "wrap": true
               }
             ]
           },
@@ -104,7 +104,7 @@ window.onload = function (e) {
                   "label": "ส่งต่อให้เพื่อนๆ",
                   "text": "สวัสดีจ้า"
                 },
-                "color": dailyColor[dayNum]
+                "color": "#D3DD37"
               }
             ]
           }
