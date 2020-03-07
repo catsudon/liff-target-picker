@@ -1,9 +1,14 @@
 var imgLink = []
+var dayDisplay = ["อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","เสาร์"]
 window.onload = function (e) {
     tday = new Date()
     cday = tday.toUTCString()
-    hour = cday.slice(0,3)
-    console.log(cday)
+    hour = cday.slice(17,19)
+    dayName = cday.slice(0,3)
+    if (dayName=="Sat" && hour<=18){
+        var dayNum = 6
+    }
+    console.log(hour)
   liff.init(function (data) {
       initializeApp(data);
       liff.sendMessages([{
@@ -18,7 +23,7 @@ window.onload = function (e) {
             "contents": [
               {
                 "type": "text",
-                "text": "สวัสดีวันจันทร์",
+                "text": "สวัสดีวัน"+dayDisplay[dayNum],
                 "size": "xxl",
                 "align": "center",
                 "color": "#DCC251"
