@@ -54,63 +54,61 @@ window.onload = function (e) {
   liff.init(function (data) {
       initializeApp(data);
       liff.sendMessages([{
-        // "type": "flex",
-        // "altText": "Flex Message",
-        // "contents": {
-        //   "type": "bubble",
-        //   "direction": "ltr",
-        //   "header": {
-        //     "type": "box",
-        //     "layout": "vertical",
-        //     "contents": [
-        //       {
-        //         "type": "text",
-        //         "text": "สวัสดีวัน"+dayDisplay[dayNum],
-        //         "size": "xxl",
-        //         "align": "center",
-        //         "color": dailyColor[dayNum]
-        //       }
-        //     ]
-        //   },
-        //   "hero": {
-        //     "type": "image",
-        //     "url": imgLink[dayNum],
-        //     "flex": 10,
-        //     "align": "center",
-        //     "size": "5xl",
-        //     "aspectRatio": "4:3",
-        //     "aspectMode": "fit"
-        //   },
-        //   "body": {
-        //     "type": "box",
-        //     "layout": "vertical",
-        //     "contents": [
-        //       {
-        //         "type": "text",
-        //         "text": "เปรมปรีศรีสุข",
-        //         "align": "center",
-        //         "wrap": true
-        //       }
-        //     ]
-        //   },
-        //   "footer": {
-        //     "type": "box",
-        //     "layout": "horizontal",
-        //     "contents": [
-        //       {
-        //         "type": "button",
-        //         "action": {
-        //           "type": "message",
-        //           "label": "ส่งต่อให้เพื่อนๆ",
-        //           "text": "สวัสดีจ้า"
-        //         },
-        //         "color": dailyColor[dayNum]
-        //       }
-        //     ]
-        //   }
-        // }
-        "type":"text",
-        "text":"hi"
+        "type": "flex",
+        "altText": "Flex Message",
+        "contents": {
+          "type": "bubble",
+          "direction": "ltr",
+          "header": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "สวัสดีวัน"+dayDisplay[dayNum],
+                "size": "xxl",
+                "align": "center",
+                "color": dailyColor[dayNum]
+              }
+            ]
+          },
+          "hero": {
+            "type": "image",
+            "url": imgLink[dayNum],
+            "flex": 10,
+            "align": "center",
+            "size": "5xl",
+            "aspectRatio": "4:3",
+            "aspectMode": "fit"
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "เปรมปรีศรีสุข",
+                "align": "center",
+                "wrap": true
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "ส่งต่อให้เพื่อนๆ",
+                  "text": "สวัสดีจ้า"
+                },
+                "color": dailyColor[dayNum]
+              }
+            ]
+          }
+        }
       }])
 //     liff.login()
 //     liff.shareTargetPicker([{
