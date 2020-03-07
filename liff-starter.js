@@ -1,7 +1,8 @@
+var imgLink = []
 window.onload = function (e) {
     tday = new Date()
     cday = tday.toUTCString()
-    hour = cday.toLocaleTimeString()
+    hour = cday.slice()
     console.log(cday)
   liff.init(function (data) {
       initializeApp(data);
