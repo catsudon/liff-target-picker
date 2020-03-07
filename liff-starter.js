@@ -53,7 +53,7 @@ window.onload = function (e) {
     
   liff.init(function (data) {
       initializeApp(data);
-      liff.sendMessages([{
+      liff.shareTargetPicker([{
         "type": "flex",
         "altText": "สวัสดีวัน"+dayDisplay[dayNum],
         "contents": {
@@ -110,12 +110,6 @@ window.onload = function (e) {
           }
         }
       }])
-    //   liff.closeWindow();
-    liff.login()
-    liff.shareTargetPicker([{
-      type: 'text',
-      text: "hello"
-  }])
   })
 }
 
