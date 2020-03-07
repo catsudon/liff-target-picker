@@ -1,8 +1,8 @@
 window.onload = function (e) {
   liff.init(function (data) {
       initializeApp(data);
-      today - new Date()
-      whatDayIsToday = today.getDay()
+      current_date = new Date()
+      cday = current_date.getDay()
       console.log(whatDayIsToday)
       liff.sendMessages([{
         "type": "flex",
