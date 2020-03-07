@@ -51,7 +51,7 @@ window.onload = function (e) {
     }
     console.log(hour)
     
-  liff.init(function (data) {
+  liff.init({liffid:"1653837986-RB8X86jb"},function (data) {
       initializeApp(data);
       liff.shareTargetPicker([{
         "type": "flex",
