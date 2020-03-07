@@ -113,6 +113,7 @@ window.onload = function (e) {
         }
       }])
   }
+  }
 
 function initializeApp(data) {
   document.getElementById('languagefield').textContent = data.language;
