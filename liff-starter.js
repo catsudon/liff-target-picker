@@ -68,13 +68,13 @@ window.onload = function (e) {
                 "text": "สวัสดีวัน"+dayDisplay[dayNum],
                 "size": "xxl",
                 "align": "center",
-                "color": "ff00ff"
+                "color": dailyColor[dayNum]
               }
             ]
           },
           "hero": {
             "type": "image",
-            "url": imgLink[dayNum],
+            "url": "https://www.technologychaoban.com/wp-content/uploads/2016/09/%E0%B8%9B%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A.jpg",
             "flex": 10,
             "align": "center",
             "size": "5xl",
@@ -104,7 +104,7 @@ window.onload = function (e) {
                   "label": "ส่งต่อให้เพื่อนๆ",
                   "text": "สวัสดีจ้า"
                 },
-                "color": "#ff0000"
+                "color": dailyColor[dayNum]
               }
             ]
           }
