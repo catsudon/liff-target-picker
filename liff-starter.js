@@ -74,7 +74,7 @@ window.onload = function (e) {
           },
           "hero": {
             "type": "image",
-            "url": "https://www.technologychaoban.com/wp-content/uploads/2016/09/%E0%B8%9B%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A.jpg",
+            "url": imgLink[dayNum],
             "flex": 10,
             "align": "center",
             "size": "5xl",
@@ -89,7 +89,7 @@ window.onload = function (e) {
                 "type": "text",
                 "text": "เปรมปรีศรีสุข",
                 "align": "center",
-                "wrap": true
+                "wrap": True
               }
             ]
           },
