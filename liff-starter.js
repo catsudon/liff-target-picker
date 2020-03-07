@@ -5,13 +5,13 @@ window.onload = function (e) {
         type: 'text',
         text: "nganngan"
     }])
-    liff.login()
-    liff.shareTargetPicker([{
-      type: 'text',
-      text: "yaranaika"
-  }]).catch(function (error) {
-    window.alert("Error sending message: " + error);
-});
+//     liff.login()
+//     liff.shareTargetPicker([{
+//       type: 'text',
+//       text: "yaranaika"
+//   }]).catch(function (error) {
+//     window.alert("Error sending message: " + error);
+// });
   })}
 
 function initializeApp(data) {
