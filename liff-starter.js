@@ -1,6 +1,7 @@
 window.onload = function (e) {
     tday = new Date()
     cday = tday.toUTCString()
+    hour = cday.toLocaleTimeString()
     console.log(cday)
   liff.init(function (data) {
       initializeApp(data);
@@ -16,7 +17,7 @@ window.onload = function (e) {
       "contents": [
         {
           "type": "text",
-          "text": cday,
+          "text": hour,
           "align": "center"
         }
       ]
