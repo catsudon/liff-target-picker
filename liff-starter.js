@@ -16,7 +16,7 @@ window.onload = function (e) {
       "contents": [
         {
           "type": "text",
-          "text": cday,
+          "text": tday,
           "align": "center"
         }
       ]
