@@ -1,6 +1,9 @@
 window.onload = function (e) {
   liff.init(function (data) {
       initializeApp(data);
+      today - new Date()
+      whatDayIsToday = today.getDay()
+      console.log(whatDayIsToday)
       liff.sendMessages([{
         "type": "flex",
         "altText": "Flex Message",
@@ -13,16 +16,20 @@ window.onload = function (e) {
             "contents": [
               {
                 "type": "text",
-                "text": "Header",
-                "align": "center"
+                "text": "สวัสดีวันจันทร์",
+                "size": "xxl",
+                "align": "center",
+                "color": "#DCC251"
               }
             ]
           },
           "hero": {
             "type": "image",
-            "url": "https://developers.line.biz/assets/images/services/bot-designer-icon.png",
+            "url": "https://www.อรุณสวัสดิ์.com/wp-content/uploads/2019/11/DSC_3261-1024x880.jpg",
+            "flex": 10,
+            "align": "center",
             "size": "full",
-            "aspectRatio": "1.51:1",
+            "aspectRatio": "4:3",
             "aspectMode": "fit"
           },
           "body": {
@@ -31,7 +38,7 @@ window.onload = function (e) {
             "contents": [
               {
                 "type": "text",
-                "text": "Body",
+                "text": "เปรมปรีศรีสุข",
                 "align": "center"
               }
             ]
@@ -44,9 +51,10 @@ window.onload = function (e) {
                 "type": "button",
                 "action": {
                   "type": "uri",
-                  "label": "Button",
+                  "label": "ส่งต่อให้เพื่อนๆ",
                   "uri": "https://linecorp.com"
-                }
+                },
+                "color": "#D3DD37"
               }
             ]
           }
