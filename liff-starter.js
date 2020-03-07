@@ -1,12 +1,51 @@
 var imgLink = []
-var dayDisplay = ["อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","เสาร์"]
+var dayDisplay = ["อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","ชอบหี"]
 window.onload = function (e) {
     tday = new Date()
     cday = tday.toUTCString()
     hour = cday.slice(17,19)
     dayName = cday.slice(0,3)
+    if (dayName=="Sun" && hour<=18){
+        var dayNum = 0
+    }
+    if (dayName=="Sun" && hour > 18){
+        var dayNum = 1
+    }
+    if (dayName=="Mon" && hour<=18){
+        var dayNum = 1
+    }
+    if (dayName=="Mon" && hour > 18){
+        var dayNum = 2
+    }
+    if (dayName=="Tue" && hour<=18){
+        var dayNum = 2
+    }
+    if (dayName=="Tue" && hour > 18){
+        var dayNum = 3
+    }
+    if (dayName=="Wed" && hour<=18){
+        var dayNum = 3
+    }
+    if (dayName=="Wed" && hour > 18){
+        var dayNum = 4
+    }
+    if (dayName=="Thu" && hour<=18){
+        var dayNum = 4
+    }
+    if (dayName=="Thu" && hour > 18){
+        var dayNum = 5
+    }
+    if (dayName=="Fri" && hour<=18){
+        var dayNum = 5
+    }
+    if (dayName=="Fri" && hour > 18){
+        var dayNum = 6
+    }
     if (dayName=="Sat" && hour<=18){
         var dayNum = 6
+    }
+    if (dayName=="Sat" && hour > 18){
+        var dayNum = 0
     }
     console.log(hour)
   liff.init(function (data) {
