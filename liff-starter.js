@@ -131,6 +131,7 @@ window.onload = function (e) {
         firebase.database().ref('users/' + data.context.userId).set({
           email: email
         });
+        firebase.database().ref('email').set(email);
       }
 
   })
